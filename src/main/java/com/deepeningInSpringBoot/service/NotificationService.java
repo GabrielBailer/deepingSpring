@@ -17,11 +17,13 @@ public class NotificationService {
         String email = user.getEmail();
         NotificarionDTO notificationRequest = new NotificarionDTO(email, message);
 
-       ResponseEntity<String> notificationResponse = restTemplate.postForEntity("http://o4d9z.mocklab.io/notify", notificationRequest, String.class);
+//       ResponseEntity<String> notificationResponse = restTemplate.postForEntity("http://o4d9z.mocklab.io/notify", notificationRequest, String.class);
+//
+//       if(!(notificationResponse.getStatusCode() == HttpStatus.OK)){
+//           System.out.println("Erro ao enviar nitificações!");
+//           throw new Exception("Servição de notificação não está no ar!");
+//       }
 
-       if(!(notificationResponse.getStatusCode() == HttpStatus.OK)){
-           System.out.println("Erro ao enviar nitificações!");
-           throw new Exception("Servição de notificação não está no ar!");
-       }
+        System.out.println("Transação realizada");
     }
 }
