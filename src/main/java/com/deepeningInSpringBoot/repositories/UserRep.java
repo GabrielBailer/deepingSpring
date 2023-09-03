@@ -1,4 +1,4 @@
-package com.deepeningInSpringBoot.domain.repositories;
+package com.deepeningInSpringBoot.repositories;
 
 import com.deepeningInSpringBoot.domain.user.User;
 import org.springframework.data.jpa.repository.JpaRepository;
